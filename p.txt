@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+char str[100]; /* character array to store the string */
+void printChars(char *p, char *q){
+  if(p == NULL)
+    printf("0");
+  else{
+    char* itr = p;
+    while(itr <= q){
+      printf("%c",*itr);
+      itr++;
+    }
+  }
+}
+
+int main()
+{
+  char a[100],*k='\0',*s;
+  int n,i;
+  scanf("%s",a);
+  n=strlen(a);   
+    for(i=0;i<=(n/2)&&a[i]==a[n-i-1];i++)
+    { k=&a[0];
+     }
+ s=&a[i-1];
+ printChars(k,s);
+  
+    return 0;
+}
